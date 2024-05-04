@@ -12,21 +12,15 @@ def Tele(ccx):
 	mm = ccx.split("|")[1]
 	yy = ccx.split("|")[2]
 	cvc = ccx.split("|")[3]
-	if "20" in yy:#Joooo
+	if "20" in yy:#Mo3gza
 		yy = yy.split("20")[1]
+	with open('fileb3.txt', 'r') as file:
 		first_line = file.readline()
 	while True:
-		lines='''fhfdhdhh%7C1715690907%7CSgwrneMS2pPb4MOSi3yDJx4a4BB0878Vt3SImrlkgQZ%7C53c82c18254f573dc0affe40f587769c182a09cf6f87025d08cb8d55df10c223
-mfhjggjgjgjcg%7C1715691132%7CbfJIelQmsCOkX6a5dTLY2yqkGgrBvAmh4apW2nHqVNn%7C12b194410aaaba1480e2acbe0d14bc8d237d03581955d0e49dda8331649b751d
-yuyri6tru54uhdf%7C1715691247%7COlxP2vLWNe5HJ1zssYGZtkN1vM0qS16cze6LGy9F7Jq%7C03435733332a3499db5e646c3984b5eff92d548c42daf80e9943402b748f6b35
-uyyirtudu5ru5dth%7C1715691342%7C0M2wtglZnX0B8hs6n003xw3LILNJrU7bAyfSOKzmo4B%7C3a691f8073fd286767f97ee11b22d3aadec012afde987c0883453bd0f0c8d9d6
-ttrsfredf%7C1715691431%7Cttc2itt7y2GP6w2RGsmReQOeq5xENcJwonB1JNdhNtL%7Cf4031e3187a41143de7343135b093b4dc5ba18b597cd663b585572fce15f9420
-ivhihgg7yt7dutf%7C1715691838%7CtWwQPa0elQesLTnRTqgsB47vLnbqivPsW1kJydsNk38%7Cb7b42a150d83a20483879fa84a76719ebd2922f221aad2e49ec672a2afaf0bd7
-ugddtudtrs%7C1715692053%7ChRHl6c2ao2gy6CX7TTLYk1Jlscy96cumdI75DjSh089%7C7b19c385c917d5dd10c4b1accb48f8bd02a38c218c1175a79cbdab72fba99afc
-t7dtudfyxyfcugc%7C1715692187%7CdC7x4P5LaSESq5HsHIPq5mumnGZdrJupgPLmagWwEz7%7Cddd9fa9e237f670395f8d4598b395fcdf14c79a94a09f5d4188357092519d35f
-hvhvggyfsjfyissyrituei52%7C1716034274%7Ch6Dp4PjGrJNVkS4krT364eoXldhJM4Lv03hmzhJCHIb%7C9346e9b937eef89f239379f7e01c303a19c6570e25f56af84b2d41c2c6345359
-bheejeugu3u%7C1716035030%7Ct6fUcpdHLJLV3QH9BCNQca94nRpCfAFEjZj1mxlMEjZ%7C7a0e9506355f55bfbb0f9c918345c3ba7fc158c6ebd6736f5be0749bb2f4a41e
-uwuehhshehsgg%7C1716035161%7CTkZeIHLDVqYGhspBLvjwk0S3d0BVvsCncz2X6lClTME%7C40869c08088bd2dc1981678822ebeb226c1e9e63605176308e34ad56288ab59c'''
+		lines='''hxhcdrr%7C1713641609%7CXOJGK2xFYyXD6Wom3p2Cujj2ZkzyHqXGk13kFuIl5z2%7Cedf540bbe280f3cab93eebcbdb30556e244f9cbfd6b72021d7ea61d6330bc024
+jsnxuwv%7C1713641702%7CLuntNS8UCY3lTvN6Yq0pXDIWhRoQN6T2rIJcVUYHqrW%7C81172a53f2d4f6da23bb1b177581990c34ac15331baad10c4d3bad3500cd0559
+bdjqisha%7C1713641764%7C6XL7TRIFD9CrHleBLzzCSt7ymVS4pAGUu5mYFW0s5XN%7C84adb5191193048c127086078a87c34bcf50e586791ccd976e5dd088b037346b
+djdnsbba%7C1713641897%7CL5FleSTWtIImxvKpB3JvEdk09qZLTGEPUaxNadcBsno%7C7ebd4c043b84acda974813d5eaf330f62d91fad75f7ee3d0300f06abc52bcaf4'''
 		lines = lines.strip().split('\n')
 		random_line_number = random.randint(0, len(lines) - 1)
 		big = lines[random_line_number]
@@ -184,6 +178,8 @@ uwuehhshehsgg%7C1716035161%7CTkZeIHLDVqYGhspBLvjwk0S3d0BVvsCncz2X6lClTME%7C40869
 			print('er#')
 	if 'avs' in result or '1000: Approved' in result or 'Duplicate' in result or 'Insufficient Funds' in result:
 		return 'Approved'
+	elif 'CVV' in result or 'Declined CVV' in result:
+		return 'CCN'
 	else:
 		return result
 def sq(card):
