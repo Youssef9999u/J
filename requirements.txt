@@ -1,0 +1,4 @@
+faker
+user_agent 
+bs4
+telebot 
